@@ -1,0 +1,33 @@
+module load_sel_controller (
+    clk,
+    reset,
+    load_sel
+);
+    
+input clk;
+output [1:0] load_sel;
+integer [6:0] count;
+
+initial begin
+    count = 0;
+    load_sel = 2'd0;
+end
+
+always @(negedge clk) begin
+    if (!reset) begin
+        count = 0;
+        load_sel <= 2'd0
+    end
+    else begin
+        count = count + 1;
+        if (count == 65) begin
+            load_sel <= 2'd1; 
+        end
+        if (count == 66) begin
+            load_sel <= 2'd2;
+            count = 0
+        end
+    end
+end
+
+endmodule

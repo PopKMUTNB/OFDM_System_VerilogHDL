@@ -1,0 +1,41 @@
+
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:52:07>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:52:09>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:52:10>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:53:22>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:55:07>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:59:31>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:59:33>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL.v
+
+Jun 13 11AM:59:36>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

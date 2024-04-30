@@ -1,0 +1,46 @@
+`timescale 10ns/100ps
+module Testbench;
+
+    reg clk;
+    reg reset_n;
+    reg [4:0] count;
+
+     wire clk_out;
+    //wire [7:0] real_PSD, imag_PSD, real_power, imag_power;
+    //wire [5:0] fft_exp_power_sig;
+    //wire [5:0] ifft_exp_power_sig;
+    //wire [1:0] source_error_sig;
+    //wire valid_wire;
+    //wire ready_wire; // Be careful of this!!!!!!!!!!!!
+    //wire sop_wire;
+    //wire eop_wire;
+	 wire PLL_clk_wire;
+
+    initial
+    begin
+        clk = 0;
+        reset_n = 0;
+        count = 5'd0;
+    end
+
+    always
+    begin
+        #10 clk = !clk;
+    end
+
+    always @(posedge clk)
+    begin
+        count = count+5'd1;
+        if (count == 5'd10)
+        begin
+            reset_n = 1;
+        end
+    end
+
+    PLL_Block PLL_Block_inst (
+    	.refclk(clk) ,	                        // input  refclk_sig
+    	.rst(!reset_n) ,	                    // input  rst_sig
+    	.outclk_0(PLL_clk_wire) 	            // output  outclk_0_sig
+    );
+
+endmodule

@@ -1,0 +1,79 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading OFDMVerilogV2/IFFT.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: IFFT.fft_ii_0: Radix-2 digit reverse implied
+Info: IFFT: Generating IFFT "IFFT" for SIM_VERILOG
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_1n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_2n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_1n64sin.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_2n64sin.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_3n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_3n64sin.hex
+Info: fft_ii_0: "IFFT" instantiated altera_fft_ii "fft_ii_0"
+Info: IFFT: Done "IFFT" with 2 modules, 244 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT\IFFT.spd --output-directory=C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT\IFFT.spd --output-directory=C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT.qsys --block-symbol-file --output-directory=C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading OFDMVerilogV2/IFFT.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: IFFT.fft_ii_0: Radix-2 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT.qsys --synthesis=VERILOG --greybox --output-directory=C:\Users\sirap\OneDrive\Desktop\Pop\Work\OFDM_Project\FPGAV2\OFDMVerilogV2\IFFT\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading OFDMVerilogV2/IFFT.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: IFFT.fft_ii_0: Radix-2 digit reverse implied
+Info: IFFT: Generating IFFT "IFFT" for QUARTUS_SYNTH
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_1n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_2n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_1n64sin.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_2n64sin.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_3n64cos.hex
+Info: fft_ii_0: --- add file: IFFT_fft_ii_0_3n64sin.hex
+Info: fft_ii_0: "IFFT" instantiated altera_fft_ii "fft_ii_0"
+Info: IFFT: Done "IFFT" with 2 modules, 108 files
+Info: Generating third-party timing and resource estimation model ...
+Info: Done generating third-party timing and resource estimation model.
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

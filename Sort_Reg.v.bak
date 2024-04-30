@@ -1,0 +1,59 @@
+module Sort_Reg(
+    clk,
+    reset_n,
+    re_in,
+    re_in_conj,
+    im_in,
+    im_in_conj,
+    re_out,
+    im_out
+);
+
+input clk;
+input reset_n;
+input [15:0] re_in, re_in_conj;
+input [15:0] im_in, im_in_conj;
+output [15:0] re_out, im_out;
+
+reg [15:0] re_reg [0:63];
+reg [15:0] im_reg [0:63];
+reg [5:0] i;
+reg [5:0] round;
+
+initial
+begin
+    i = 6'd1;
+    round = 6'd0;
+    re_reg[0] <= 16'd0;
+    re_reg[32] <= 16'd0;   
+    im_reg[0] <= 16'd0;
+    im_reg[32] <= 16'd0;
+end
+
+always @(posedge clk)
+begin
+    if (reset_n == 0) 
+    begin
+        re_reg <= 16'd0;
+        im_reg <= 16'd0;
+    end    
+    else 
+    begin
+        if (i < 6'd32) 
+        begin
+            re_reg[i] <= re_in;
+            re_reg[i+32] <= re_in_conj;
+            im_reg[i] <= im_in;
+            im_reg[i+32] <= im_in_conj;
+        end 
+        else 
+        begin
+            i = 1;
+        end
+        re_out <= re_reg[round];
+        im_out <= im_reg[round];
+        round = round + 1;
+    end
+end
+
+endmodule

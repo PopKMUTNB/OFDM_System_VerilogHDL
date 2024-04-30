@@ -1,0 +1,388 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/modelsim
+vComplex_Conj
+Z1 !s110 1690011977
+!i10b 1
+!s100 =HW:]?:;?6LlQHLN89mN_3
+InjYifEODl[;QVJ@i>JKVS1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1686451734
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Complex_Conj.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Complex_Conj.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1690011977.000000
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Complex_Conj.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Complex_Conj.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2
+Z7 tCvgOpt 0
+n@complex_@conj
+vCounter_8bits
+R1
+!i10b 1
+!s100 N;AM9bmXRU<MZ7l3k@Q<`1
+Izf?dFV;NZ2@]M`MNmSm9W1
+R2
+R0
+w1686736057
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Counter_8bits.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Counter_8bits.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Counter_8bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Counter_8bits.v|
+!i113 1
+R5
+R6
+R7
+n@counter_8bits
+vFFT
+!s110 1690011976
+!i10b 1
+!s100 kXdS2[i_B_<CFR<kgL>L>2
+IO01KNHj:^gA97GGVZiifT1
+R2
+R0
+w1686454516
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/FFT.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/FFT.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z8 !s108 1690011976.000000
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/FFT.v|
+!s90 -reportprogress|300|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/FFT.v|
+!i113 1
+R7
+n@f@f@t
+vFFT_Controller
+R1
+!i10b 1
+!s100 Do=^MRWjHZTc<BE?Ma1mK0
+I8H]TeT`2acW@5eG3HNOcF0
+R2
+R0
+w1686454436
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Controller.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Controller.v|
+!i113 1
+R5
+R6
+R7
+n@f@f@t_@controller
+vFFT_Module
+R1
+!i10b 1
+!s100 SM?YLT2Oj;Pjej0eah]683
+IJT4SAcW]Rmh?cP7IJ]@?D0
+R2
+R0
+w1686818735
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Module.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Module.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Module.v|
+!i113 1
+R5
+R6
+R7
+n@f@f@t_@module
+vIFFT
+!s110 1690011964
+!i10b 1
+!s100 j[Z8m@W?`1;[YdjPCAQGf2
+IgZCXoL0aSWPF_GZPk3[U63
+R2
+R0
+w1686454610
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/IFFT.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/IFFT.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1690011964.000000
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/IFFT.v|
+!s90 -reportprogress|300|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/IFFT/simulation/IFFT.v|
+!i113 1
+R7
+n@i@f@f@t
+vload_sel_controller
+R1
+!i10b 1
+!s100 Ufe:7M;:UX<DOzDX^_jKU1
+IW5PYYC_RJR<BQi:=Qo99;1
+R2
+R0
+w1686663574
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/load_sel_controller.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/load_sel_controller.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/load_sel_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/load_sel_controller.v|
+!i113 1
+R5
+R6
+R7
+vlpm_constant_0
+R1
+!i10b 1
+!s100 ?IVaI>_I>NmG@55ZcV[?N3
+IVFCF88LMJeK^cZEzZ@=<W1
+R2
+R0
+Z9 w1687060629
+Z10 8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Sorter.v
+Z11 FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Sorter.v
+L0 1275
+R3
+r1
+!s85 0
+31
+R4
+Z12 !s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Sorter.v|
+Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Sorter.v|
+!i113 1
+R5
+R6
+R7
+vNCO
+!s110 1690011967
+!i10b 1
+!s100 ek[U8@98;fSL?X?l3oS>L1
+IO7Dii8n4kEe?=I?FX70RB1
+R2
+R0
+w1685415585
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/NCO.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/NCO.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1690011967.000000
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/NCO.v|
+!s90 -reportprogress|300|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/NCO.v|
+!i113 1
+R7
+n@n@c@o
+vPLL
+R1
+!i10b 1
+!s100 _NHz4i3j[O@h8W3hdEZ4E2
+IaEdIMe[>Z;ME=XcT::GhH3
+R2
+R0
+w1686725977
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_sim/PLL.vo
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_sim/PLL.vo
+Z14 L0 31
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_sim/PLL.vo|
+!s90 -reportprogress|300|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_sim/PLL.vo|
+!i113 1
+R7
+n@p@l@l
+vPLL2
+R1
+!i10b 1
+!s100 giBJDXUIIPT377e<S?i3<3
+I8[M>X[6cKGXHLF1dH@E_>3
+R2
+R0
+w1686733655
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL2_sim/PLL2.vo
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL2_sim/PLL2.vo
+R14
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL2_sim/PLL2.vo|
+!s90 -reportprogress|300|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL2_sim/PLL2.vo|
+!i113 1
+R7
+n@p@l@l2
+vPLL_Block
+R1
+!i10b 1
+!s100 dAZR55ZfI;U@VZlo1QHPY1
+I6[LgeC3l8@Z[<W>JXcTDG1
+R2
+R0
+w1686735414
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_Block.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_Block.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_Block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_Block.v|
+!i113 1
+R5
+R6
+R7
+n@p@l@l_@block
+vPLL_tb
+R1
+!i10b 1
+!s100 Z>5m5jgaC?:Z`Xo86LXOX2
+Ig[jKIGDPY<NBmiMXY5>KF1
+R2
+R0
+w1686734550
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_tb.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/PLL_tb.v|
+!i113 1
+R5
+R6
+R7
+n@p@l@l_tb
+vReg8bits
+R1
+!i10b 1
+!s100 iNmbj`iG:zb<:1a=oP3F]3
+IH:3Qi2m_Cnf]5]`LT>FfZ0
+R2
+R0
+w1686543535
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Reg8bits.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Reg8bits.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Reg8bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Reg8bits.v|
+!i113 1
+R5
+R6
+R7
+n@reg8bits
+vRegLoadSel
+R1
+!i10b 1
+!s100 F[G^aKPnl:n^D4L`?=Q8O3
+IcLkZbTm>jkOU5kQA9glkA1
+R2
+R0
+w1686646316
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/RegLoadSel.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/RegLoadSel.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/RegLoadSel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/RegLoadSel.v|
+!i113 1
+R5
+R6
+R7
+n@reg@load@sel
+vSorter
+R1
+!i10b 1
+!s100 PTGPoT;?^J27m3=YTAzT;0
+I4YWkYKI5kzGI8Rz]]k`U>1
+R2
+R0
+R9
+R10
+R11
+L0 19
+R3
+r1
+!s85 0
+31
+R4
+R12
+R13
+!i113 1
+R5
+R6
+R7
+n@sorter
+vtestbench
+R1
+!i10b 1
+!s100 Hj;V`4b@dzDHfQNb^FHPz2
+IGDge6OclE?4OeEkm`a`YA3
+R2
+R0
+w1690010889
+8C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v
+FC:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2|C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v|
+!i113 1
+R5
+R6
+R7

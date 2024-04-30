@@ -1,0 +1,94 @@
+transcript on
+if ![file isdirectory OFDM_iputf_libs] {
+	file mkdir OFDM_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+vlib OFDM_iputf_libs/nco_ii_0
+vmap nco_ii_0 ./OFDM_iputf_libs/nco_ii_0
+vlib OFDM_iputf_libs/fft_ii_0
+vmap fft_ii_0 ./OFDM_iputf_libs/fft_ii_0
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/NCO_nco_ii_0_sin.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/NCO_nco_ii_0_cos.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twi1.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twr4.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twr1.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twi2.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twr2.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twi3.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twi4.hex ./
+file copy -force C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0_opt_twr3.hex ./
+
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_nco_mob_rw.v"                              -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_nco_isdr.v"                                -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_nco_apr_dxx.v"                             -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_dxx_g.v"                                   -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_dxx.v"                                     -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_gal.v"                                     -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_nco_as_m_cen.v"                            -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/mentor/asj_altqmcpipe.v"                              -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/submodules/NCO_nco_ii_0.v"                                       -work nco_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/NCO/simulation/NCO.v"                                                                         
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/auk_dspip_text_pkg.vhd"                               -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/auk_dspip_math_pkg.vhd"                               -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/auk_dspip_lib_pkg.vhd"                                -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_sink.vhd"     -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_avalon_streaming_block_source.vhd"   -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/auk_dspip_roundsat.vhd"                               -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/apn_fft_mult_can.vhd"                          -work fft_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/apn_fft_mult_cpx_1825.v"                       -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/apn_fft_mult_cpx.vhd"                          -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/hyper_opt_OFF_pkg.vhd"                         -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/altera_fft_dual_port_ram.vhd"                  -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/altera_fft_dual_port_rom.vhd"                  -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/altera_fft_mult_add.vhd"                       -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/altera_fft_single_port_rom.vhd"                -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_fft_pkg.vhd"                               -work fft_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/hyper_pipeline_interface.v"                    -work fft_ii_0
+vlog -sv "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/counter_module.sv"                             -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_lib_pkg.vhd"                  -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_bit_reverse_addr_control.vhd"        -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_bit_reverse_core.vhd"                -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_bit_reverse_reverse_carry_adder.vhd" -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_adder_fp.vhd"                 -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_addsub.vhd"                   -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_bfi.vhd"                      -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_bfii.vhd"                     -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_bf_control.vhd"               -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_cma.vhd"                      -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_cma_adder_fp.vhd"             -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_cma_bfi_fp.vhd"               -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_cma_fp.vhd"                   -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_core.vhd"                     -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_counter.vhd"                  -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_delay.vhd"                    -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_enable_control.vhd"           -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_stage.vhd"                    -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_stg_out_pipe.vhd"             -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_stg_pipe.vhd"                 -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_top.vhd"                      -work fft_ii_0
+vcom     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/mentor/auk_dspip_r22sdf_twrom.vhd"                    -work fft_ii_0
+vlog -sv "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/submodules/FFT_fft_ii_0.sv"                                      -work fft_ii_0
+vlog     "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT/simulation/FFT.v"                                                                         
+
+vlog -vlog01compat -work work +incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2 {C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v}
+vlog -vlog01compat -work work +incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2 {C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Module.v}
+vlog -vlog01compat -work work +incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2 {C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/FFT_Controller.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2 {C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/testbench.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L nco_ii_0 -L fft_ii_0 -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run -all

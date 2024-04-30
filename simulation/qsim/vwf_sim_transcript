@@ -1,0 +1,215 @@
+Determining the location of the ModelSim executable...
+
+Using: D:\Applications\intelFPGA\18.1\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off OFDM -c OFDM --vector_source="C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Waveform1.vwf" --testbench_file="C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/Waveform1.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jun 15 11:18:43 2023
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off OFDM -c OFDM --vector_source=C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Waveform1.vwf --testbench_file=C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/Waveform1.vwf.vht
+Warning (20013): Ignored 22 assignments for entity "FFT" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+Warning (20013): Ignored 33 assignments for entity "FFT_fft_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 22 assignments for entity "IFFT" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+Warning (20013): Ignored 33 assignments for entity "IFFT_fft_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 22 assignments for entity "NCO" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+Warning (20013): Ignored 32 assignments for entity "NCO_nco_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "PLL" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity PLL -sip PLL.sip -library lib_PLL was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity PLL -sip PLL.sip -library lib_PLL was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity PLL -sip PLL.sip -library lib_PLL was ignored
+Warning (20013): Ignored 16
+ assignments for entity "PLL2" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+Warning (20013): Ignored 317 assignments for entity "PLL2_0002" -- entity does not exist in design
+Warning (20013): Ignored 317 assignments for entity "PLL_0002" -- entity does not exist in design
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/" OFDM -c OFDM
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Thu Jun 15 11:18:50 2023
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/ OFDM -c OFDM
+Warning (20013): Ignored 22 assignments for entity "FFT" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity FFT -sip FFT/simulation/FFT.sip -library lib_FFT was ignored
+Warning (20013): Ignored 33 assignments for entity "FFT_fft_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 22 assignments for entity "IFFT" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity IFFT -sip IFFT/simulation/IFFT.sip -library lib_IFFT was ignored
+Warning (20013): Ignored 33 assignments for entity "IFFT_fft_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 22 assignments for entity "NCO" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME Qsys -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV Qsys -entity NCO -sip NCO/simulation/NCO.sip -library lib_NCO was ignored
+Warning (20013): Ignored 32 assignments for entity "NCO_nco_ii_0" -- entity does not exist in design
+Warning (20013): Ignored 16 assignments for entity "PLL" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity PLL -sip PLL.sip -library lib_PLL was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity PLL -sip PLL.sip -library lib_PLL was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity PLL -sip PLL.sip -library lib_PLL was ignored
+Warning (20013): Ignored 16 assignments for entity "PLL2" -- entity does not exist in design
+    Warning (20014
+): Assignment for entity set_global_assignment -name IP_TOOL_NAME altera_pll -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_VERSION 18.1 -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name IP_TOOL_ENV mwpim -entity PLL2 -sip PLL2.sip -library lib_PLL2 was ignored
+Warning (20013): Ignored 317 assignments for entity "PLL2_0002" -- entity does not exist in design
+Warning (20013): Ignored 317 assignments for entity "PLL_0002" -- entity does not exist in design
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file OFDM.vho in folder "C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4728 megabytes
+    Info: Processing ended: Thu Jun 15 11:18:58 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/OFDM.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+D:/Applications/intelFPGA/18.1/modelsim_ase/win32aloem/vsim -c -do OFDM.do
+
+Reading D:/Applications/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do OFDM.do
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:18:59 on Jun 15,2023
+# vcom -work work OFDM.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity Delay_Reg
+# -- Compiling architecture structure of Delay_Reg
+# End time: 11:18:59 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:18:59 on Jun 15,2023
+# vcom -work work Waveform1.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Delay_Reg_vhd_vec_tst
+# -- Compiling architecture Delay_Reg_arch of Delay_Reg_vhd_vec_tst
+# End time: 11:18:59 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Delay_Reg_vhd_vec_tst 
+# Start time: 11:18:59 on Jun 15,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.delay_reg_vhd_vec_tst(delay_reg_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.delay_reg(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_clkena(behavior)
+# Loading altera.dffeas(vital_dffeas)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Loading cyclonev.cyclonev_ram_block(block_arch)
+# Loading sv_std.std
+# Loading altera_lnsim.generic_m10k
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.common_28nm_ram_block
+# Loading altera_lnsim.common_28nm_ram_register
+# Loading altera_lnsim.common_28nm_ram_pulse_generator
+# ** Warning: Design size of 11948 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#34
+
+# End time: 11:19:00 on Jun 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/Waveform1.vwf...
+
+Reading C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/OFDM.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/sirap/OneDrive/Desktop/Pop/Work/OFDM_Project/FPGAV2/OFDMVerilogV2/simulation/qsim/OFDM_20230615111900.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

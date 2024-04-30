@@ -1,0 +1,15 @@
+module clk_divider (
+    clk,
+    clk_div
+);
+
+input clk;
+output reg clk_div;
+
+always begin
+    repeat (3) @(posedge clk) begin
+        clk_div = ~clk_div;
+    end
+end
+    
+endmodule
